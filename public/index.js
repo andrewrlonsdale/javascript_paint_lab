@@ -109,7 +109,18 @@ var app = function(){
   var downloadButton = document.getElementById('download-button');
   downloadButton.onclick = function(){
     var dataURL = canvas.toDataURL('image/png');
-    downloadButton.href = dataURL;
+    downloadButton.href = dataURL;    
+  };
+
+  var downloadButton2 = document.getElementById('download-button2');
+  downloadButton2.onclick = function(){
+    var dataURL = canvas.toDataURL('image/jpeg');
+    downloadButton2.href = dataURL;
+  };
+
+  var steveDownButton = document.getElementById('download-button-steve');
+  steveDownButton.onclick = function(){
+    steveDownButton.href = "https://scontent.xx.fbcdn.net/v/t1.0-9/10933712_1084239348271414_7259522291350491604_n.jpg?oh=fda04bdf833aa34924fb575fd4357ba7&oe=593389AA";
   };
 
   var steveButton = document.querySelector('#classic-steve');
